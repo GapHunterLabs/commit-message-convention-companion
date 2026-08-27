@@ -12,9 +12,9 @@ import com.intellij.openapi.vcs.checkin.CheckinHandlerFactory
  * design, same as the platform's own built-in handlers).
  *
  * Signature confirmed via `javap` against this exact IDE version's
- * cached app.jar (2025.2.6.2, 2026-08-19) -- see SDK_GOTCHAS.md for
- * the full bytecode dump. `createHandler` is abstract and Java (not
- * Kotlin), so there is no property-vs-function ambiguity here.
+ * cached app.jar (2025.2.6.2, 2026-08-19), not guessed.
+ * `createHandler` is abstract and Java (not Kotlin), so there is no
+ * property-vs-function ambiguity here.
  */
 class ConventionalCommitCheckinHandlerFactory : CheckinHandlerFactory() {
     override fun createHandler(panel: CheckinProjectPanel, commitContext: CommitContext): CheckinHandler {

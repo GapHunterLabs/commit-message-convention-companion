@@ -9,13 +9,13 @@ instead of silently accepting or rejecting.
 ## Why it exists
 
 An original idea, not a port of an existing competitor — validated
-against `CONSTITUTION.md` §1's "Plan B permanente" discipline before
+against this catalog's own idea-validation discipline before
 being built: (1) confirmed no plugin in this catalog does exactly this;
 (2) confirmed buildable in the ~10-day budget with a platform mechanism
 already stable (`CheckinHandlerFactory`/`CheckinHandler` — first use of
 this specific mechanism in the Gap Hunter Labs catalog, its real
 signature confirmed via `javap` against the platform jar rather than
-guessed — see `SDK_GOTCHAS.md`). Same "apuesta consciente sin ancla de
+guessed). Same "apuesta consciente sin ancla de
 mercado" treatment as Refactor Simulator / Test Scaffold Companion /
 SQL String Concatenation Companion: v0.1 ships free, no time/marketing
 investment disproportionate to real demand signal until there's
@@ -77,8 +77,8 @@ Stated honestly, not silently half-handled:
   team-specific regex, a configurable length limit, shared via a VCS
   config file. This is a distinct, larger feature intentionally
   deferred to a possible future v0.2 Pro tier, not started, not
-  promised (see `CONSTITUTION.md`'s monetization discipline: no
-  disproportionate investment before real adoption signal).
+  promised (no disproportionate investment before real adoption
+  signal).
 
 ## How it integrates with the IDE
 
