@@ -16,9 +16,8 @@ dependencies {
         // CheckinHandler/CheckinHandlerFactory (com.intellij.openapi.vcs.checkin.*)
         // and CheckinProjectPanel/CommitMessageI (com.intellij.openapi.vcs.*) all
         // live directly in app.jar's platform module (confirmed via `javap`
-        // against this exact IDE version's cached jar, 2026-08-19 -- see
-        // SDK_GOTCHAS.md for the full signature confirmation), so no extra
-        // bundled VCS plugin dependency is required beyond the base platform
+        // against this exact IDE version's cached jar, 2026-08-19), so no
+        // extra bundled VCS plugin dependency is required beyond the base platform
         // module -- same "platform module is enough" pattern already used by
         // sql-concatenation-companion.
         bundledPlugin("com.intellij.modules.platform")
@@ -45,7 +44,7 @@ intellijPlatform {
 
     // Catch experimental/internal API usage locally, before Marketplace's
     // own verifier flags it post-upload. Never relax this list without a
-    // documented exception (see AUTOMATION_PLAYBOOK.md SS1.5).
+    // documented exception.
     pluginVerification {
         failureLevel = listOf(
             VerifyPluginTask.FailureLevel.COMPATIBILITY_PROBLEMS,
