@@ -8,18 +8,7 @@ instead of silently accepting or rejecting.
 
 ## Why it exists
 
-An original idea, not a port of an existing competitor — validated
-against this catalog's own idea-validation discipline before
-being built: (1) confirmed no plugin in this catalog does exactly this;
-(2) confirmed buildable in the ~10-day budget with a platform mechanism
-already stable (`CheckinHandlerFactory`/`CheckinHandler` — first use of
-this specific mechanism in the Gap Hunter Labs catalog, its real
-signature confirmed via `javap` against the platform jar rather than
-guessed). Same "apuesta consciente sin ancla de
-mercado" treatment as Refactor Simulator / Test Scaffold Companion /
-SQL String Concatenation Companion: v0.1 ships free, no time/marketing
-investment disproportionate to real demand signal until there's
-evidence of adoption.
+An original idea, not a port of an existing competitor. Before building it I confirmed that no other plugin in this catalog does exactly this. It runs at commit time through the platform's stable `CheckinHandlerFactory` / `CheckinHandler` mechanism, with its real signature checked with `javap` against the platform jar rather than guessed. It is free.
 
 ## Differentiation vs. Committle — verified against real source code
 
